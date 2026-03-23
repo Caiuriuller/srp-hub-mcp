@@ -1,0 +1,62 @@
+export interface CustomerRequest {
+  codigo: string;
+  tipo: number;
+  cnpjCpf: string;
+  nomeFantasia: string;
+  status: number;
+}
+
+export interface CustomerResponse {
+  codigo: string;
+  tipo: number;
+  cnpjCpf: string;
+  razaoSocial: string;
+  nomeFantasia: string;
+  sobrenome: string;
+  genero: number;
+  dataAniversario: string;
+  situacaoConjugal: number;
+  temFilhos: number;
+  imovelProprio: number;
+  tamanhoImovel: number;
+  telefone: string;
+  celular: string;
+  email: string;
+  site: string;
+  twitter: string;
+  dataFundacao: string;
+  inscricaoEstadual: string;
+  faturamentoMedioMensal: number;
+  faturamentoMedioAnual: number;
+  funcionarios: number;
+  gestaoEmpresa: number;
+  codigoSuframa: string;
+  limiteCredito: number;
+  limiteCreditoSugerido: number;
+  prazoMedioSugerido: number;
+  parecerComercial: string;
+  observacao: string;
+  status: number;
+  cep: string;
+  endereco: string;
+  complemento: string;
+  numero: string;
+  bairro: string;
+  pontoReferencia: string;
+  codigoCidade: string;
+  clientePrincipalGrupoEconomico: number;
+  codigoGrupoEconomico: string;
+  codigoSetor: string;
+  codigoSegmento: string;
+  codigoSubsegmento: string;
+  codigoFormaPagamento: string;
+  codigoCondicaoPagamento: string;
+  agencia: string;
+  banco: string;
+  conta: string;
+  codigoPais: string;
+  nomeCidade: string;
+  uf: string;
+  codigoPaisSped: string;
+  nomePais: string;
+}

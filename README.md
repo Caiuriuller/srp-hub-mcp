@@ -163,6 +163,20 @@ Creates a new customer (lead) in the Hub.
 - If `tipo` is `1` (Jurídica) or `3` (Exportação), `cnpjCpf` must be a valid 14-digit CNPJ.
 - No formatting characters (dots, dashes, slashes) — digits only.
 
+### `post_lead`
+
+Creates a new lead in the Hub via the `/leads` endpoint.
+
+| Field          | Type   | Required | Description                                              |
+|----------------|--------|----------|----------------------------------------------------------|
+| `codigo`       | string | Yes      | Unique lead code (max 100 chars)                         |
+| `email`        | string | Yes      | Valid email address (max 250 chars)                      |
+| `nomeFantasia` | string | No       | Trade name / display name (max 250 chars)                |
+| `razaoSocial`  | string | No       | Legal/company name (max 250 chars)                       |
+| `telefone`     | string | No       | Phone number (max 20 chars)                              |
+| `celular`      | string | No       | Mobile number (max 20 chars)                             |
+| `origem`       | string | No       | Lead source: `OUTROS` or `RD_STATION`                    |
+
 ## Project Structure
 
 ```

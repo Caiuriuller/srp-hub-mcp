@@ -3,6 +3,7 @@ import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js"
 import server from "./server.js";
 import { HUB_API_BASE, HUB_API_TOKEN } from "./utils/hub.http.js";
 import "./tools/customer/handler.js";
+import "./tools/lead/handler.js";
 
 if (!HUB_API_TOKEN) {
   console.error("[srp-hub-mcp] FATAL: HUB_API_TOKEN env var is required but not set.");

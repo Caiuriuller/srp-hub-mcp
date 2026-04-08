@@ -7,7 +7,7 @@ import { request } from "../../utils/hub.http.js";
 server.registerTool(
   "post_customer",
   {
-    description: "Cria um novo cliente (lead) no Hub. Use esta ferramenta para registrar leads encontrados em outras fontes.",
+    description: "Cria um novo cliente no Hub. Use esta ferramenta para registrar clientes encontrados em outras fontes.",
     inputSchema: z.object({
       codigo: z
         .string({ required_error: "codigo é obrigatório" })

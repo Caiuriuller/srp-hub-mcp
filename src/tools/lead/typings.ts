@@ -1,12 +1,14 @@
-export interface CustomerRequest {
+export interface LeadRequest {
   codigo: string;
-  tipo: number;
-  cnpjCpf: string;
-  nomeFantasia: string;
-  status: number;
+  email: string;
+  nomeFantasia?: string;
+  razaoSocial?: string;
+  telefone?: string;
+  celular?: string;
+  origem?: "OUTROS" | "RD_STATION";
 }
 
-export interface CustomerResponse {
+export interface LeadResponse {
   codigo: string;
   tipo: number;
   cnpjCpf: string;
